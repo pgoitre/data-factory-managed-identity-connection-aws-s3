@@ -1,0 +1,9 @@
+{
+	"name": "datafactory-example-pgoitre",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ec18c70c-d214-4c21-b89f-cd6e9cbe5f05",
+		"tenantId": "123e79b7-5816-4f02-98d9-cd6d291a3270"
+	}
+}
