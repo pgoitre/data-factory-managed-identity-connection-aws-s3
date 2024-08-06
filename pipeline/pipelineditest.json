@@ -1,0 +1,40 @@
+{
+	"name": "pipelineditest",
+	"properties": {
+		"activities": [
+			{
+				"name": "GetBearerTokenforMI",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"headers": {
+						"Content-Type": "application/x-www-form-urlencoded"
+					},
+					"url": "https://login.microsoftonline.com/123e79b7-5816-4f02-98d9-cd6d291a3270/oauth2/token  ",
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"authentication": {
+						"resource": "urn://rpawss3_azure_federate",
+						"credential": {
+							"referenceName": "credentialmyuserassignedmanagedidentity1",
+							"type": "CredentialReference"
+						},
+						"type": "UserAssignedManagedIdentity"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
