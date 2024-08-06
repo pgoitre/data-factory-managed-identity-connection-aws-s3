@@ -25,8 +25,12 @@
 						"type": "IntegrationRuntimeReference"
 					},
 					"authentication": {
-						"type": "MSI",
-						"resource": "urn://rpawss3_azure_federate"
+						"resource": "urn://rpawss3_azure_federate",
+						"credential": {
+							"referenceName": "credentialmyuserassignedmanagedidentity1",
+							"type": "CredentialReference"
+						},
+						"type": "UserAssignedManagedIdentity"
 					}
 				}
 			}
