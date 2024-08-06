@@ -54,7 +54,7 @@
 						"referenceName": "AutoResolveIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
 					},
-					"body": "",
+					"body": "grant_type=client_credentials",
 					"authentication": {
 						"credential": {
 							"referenceName": "credentialmyuserassignedmanagedidentity1",
