@@ -26,28 +26,6 @@
 					},
 					"body": "tenant=123e79b7-5816-4f02-98d9-cd6d291a3270&grant_type=client_credentials&client_id=a24ca28f-f773-48d4-b677-7faa6eea547b&resource=urn://rpawss3_azure_federate"
 				}
-			},
-			{
-				"name": "Web1",
-				"type": "WebActivity",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"method": "POST",
-					"url": "https://login.microsoftonline.com/123e79b7-5816-4f02-98d9-cd6d291a3270/oauth2/token  ",
-					"connectVia": {
-						"referenceName": "AutoResolveIntegrationRuntime",
-						"type": "IntegrationRuntimeReference"
-					},
-					"body": "grant_type=client_credentials"
-				}
 			}
 		],
 		"annotations": []
