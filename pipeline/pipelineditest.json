@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "GetBearerTokenforMI",
+				"name": "Web1",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -28,7 +28,7 @@
 				}
 			},
 			{
-				"name": "Web1",
+				"name": "Web2",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -40,16 +40,15 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"method": "POST",
+					"method": "GET",
 					"headers": {
-						"Content-Type": "application/x-www-form-urlencoded"
+						"Metadata": "true"
 					},
-					"url": "https://login.microsoftonline.com/123e79b7-5816-4f02-98d9-cd6d291a3270/oauth2/token  ",
+					"url": "http://169.254.169.254/metadata/instance?api-version=2021-02-01&resource=urn://rpawss3_azure_federate",
 					"connectVia": {
 						"referenceName": "AutoResolveIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
-					},
-					"body": "tenant=123e79b7-5816-4f02-98d9-cd6d291a3270&grant_type=client_credentials&client_id=a24ca28f-f773-48d4-b677-7faa6eea547b&resource=urn://rpawss3_azure_federate"
+					}
 				}
 			}
 		],
