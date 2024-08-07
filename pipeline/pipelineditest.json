@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"method": "GET",
+					"method": "POST",
 					"headers": {
 						"Content-Type": "application/x-www-form-urlencoded"
 					},
@@ -24,15 +24,7 @@
 						"referenceName": "AutoResolveIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
 					},
-					"body": "tenant=123e79b7-5816-4f02-98d9-cd6d291a3270&client_id=objectid(applicationid)&client_secret=clientsecret&grant_type=client_credentials&scope=https://graph.microsoft.com/.default",
-					"authentication": {
-						"resource": "urn://rpawss3_azure_federate",
-						"credential": {
-							"referenceName": "credentialmyuserassignedmanagedidentity3",
-							"type": "CredentialReference"
-						},
-						"type": "UserAssignedManagedIdentity"
-					}
+					"body": "tenant=123e79b7-5816-4f02-98d9-cd6d291a3270&grant_type=client_credentials&client_id=a24ca28f-f773-48d4-b677-7faa6eea547b&resource=urn://rpawss3_azure_federate"
 				}
 			},
 			{
