@@ -28,7 +28,7 @@
 					"authentication": {
 						"resource": "urn://rpawss3_azure_federate",
 						"credential": {
-							"referenceName": "credentialmyuserassignedmanagedidentity1",
+							"referenceName": "credentialmyuserassignedmanagedidentity3",
 							"type": "CredentialReference"
 						},
 						"type": "UserAssignedManagedIdentity"
